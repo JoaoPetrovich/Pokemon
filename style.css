@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #637e7c;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho {
+    background-color: #CF0D2A;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    border-bottom: 4px solid #fff;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1px;
+    min-height: 100%;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container,
+.container2,
+.container3 {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+}
+
+.img-container {
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    width: 100%;
+    font-size: 22px;
+}
+
+.descricao {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    width: 100%;
+}
+
+.img-container:hover .descricao {
+    display: block;
+}
+
+.img-car,
+.img-car2,
+.img-car3 {
+    width: 100%;
+    height: 300px;
+    display: block;
+    -webkit-user-drag: none;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #CF0D2A;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    border-top: 4px solid #fff;
+    width: 100%;
+    color: #acaaaa;
+}
